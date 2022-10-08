@@ -1,5 +1,5 @@
-.App h1 {
-  font-family: var(--main-font);
-  text-align: center;
-  color: burlywood;
+.App .logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
