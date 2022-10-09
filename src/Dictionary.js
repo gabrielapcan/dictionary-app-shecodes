@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
+import Definitions from "./Definitions";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
+    setResults(response.data[0]);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -40,10 +42,17 @@ export default function Dictionary() {
       </div>
     </form>
   );
-
-  return (
-    <div className="Dictionary">
-      <div>{form}</div>
-    </div>
-  );
+  if (results) {
+    return (
+      <div className="Dictionary">
+        <div>{form}</div>
+        <Definitions data={results} />
+      </div>
+    );
+  } else
+    return (
+      <div className="Dictionary">
+        <div>{form}</div>
+      </div>
+    );
 }
