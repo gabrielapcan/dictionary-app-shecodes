@@ -1,0 +1,20 @@
+.Audio i {
+  color: var(--secondary);
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}
+.Audio .active {
+  cursor: pointer;
+  transition: 0s 1s;
+}
+.Audio .active:hover {
+  cursor: pointer;
+}
+.Audio .active:active {
+  color: var(--highlight);
+  transition: 0s;
+}
+.Audio .deactivated {
+  color: #eeeeee;
+}
