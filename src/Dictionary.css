@@ -1,6 +1,7 @@
 .Dictionary .form {
   max-width: 380px;
   margin: 0 auto;
+  padding: 10px 0 0 0;
 }
 .Dictionary .form-components {
   display: flex;
@@ -17,4 +18,9 @@
 .Dictionary .search-button:hover {
   background: var(--highlight);
   color: var(--background);
+}
+
+.Dictionary .suggested {
+  margin-top: 5px;
+  font-size: 12px;
 }

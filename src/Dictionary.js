@@ -48,13 +48,15 @@ export default function Dictionary(props) {
           ></input>
         </div>
       </div>
+      <div className="suggested">Suggested words: yoga, sunset, wine,...</div>
     </form>
   );
 
   if (results) {
     return (
       <div className="Dictionary">
-        <div>{form}</div>
+        <section>{form}</section>
+
         <Definitions data={results} />
       </div>
     );

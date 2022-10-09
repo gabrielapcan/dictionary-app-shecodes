@@ -1,12 +1,18 @@
 .App {
-  max-width: 800px;
   margin: 0 auto;
-  background-color: var(--background);
   font-family: var(main-font);
 }
+section {
+  background-color: var(--background);
+
+  padding: 10px 30px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
 .App img {
   width: 100%;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 .App footer {
   text-align: center;
@@ -16,10 +22,7 @@
 }
 
 .App .main-section {
-  padding: 20px;
-  border-radius: 4px;
-
   background: white;
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto;
 }

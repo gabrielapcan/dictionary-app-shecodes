@@ -16,7 +16,7 @@ i {
   transition: 0s;
 }
 .deactivated {
-  color: #eeeeee;
+  color: rgba(0, 0, 0, 0.1);
 }
 .phonetic-text {
   font-family: var(--monospace);
