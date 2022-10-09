@@ -21,20 +21,20 @@ export default function Dictionary() {
   let form = (
     <form onSubmit={handleSubmit} className="form">
       <div className="row">
-        <div className="col-md-10 mt-2">
+        <div className="col-10 form-components">
           <input
             type="search"
             placeholder="Enter a keyword..."
-            className="form-control w-100 search-bar"
+            className="form-control search-bar"
             autoFocus="on"
             onChange={handleWord}
           ></input>
         </div>
-        <div className="col-md-2 mt-2 text-center">
+        <div className="col-2 form-components">
           <input
             type="submit"
-            value="Search!"
-            className="btn w-md-100 search-button"
+            value="Search"
+            className="btn search-button"
           ></input>
         </div>
       </div>
