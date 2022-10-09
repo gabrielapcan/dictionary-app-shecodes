@@ -1,20 +1,25 @@
-.Audio i {
+i {
   color: var(--secondary);
   font-size: 25px;
   position: relative;
   top: 3px;
 }
-.Audio .active {
+.active {
   cursor: pointer;
   transition: 0s 1s;
 }
-.Audio .active:hover {
+.active:hover {
   cursor: pointer;
 }
-.Audio .active:active {
+.active:active {
   color: var(--highlight);
   transition: 0s;
 }
-.Audio .deactivated {
+.deactivated {
   color: #eeeeee;
+}
+.phonetic-text {
+  font-family: var(--monospace);
+  font-size: 16px;
+  margin-left: 10px;
 }

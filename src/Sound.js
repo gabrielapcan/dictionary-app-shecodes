@@ -2,23 +2,26 @@ import React from "react";
 import "./Sound.css";
 
 export default function Sound(props) {
-  if (props.data !== "") {
-    let audio = new Audio(props.data);
+  if (props.data.audio !== "") {
+    let audio = new Audio(props.data.audio);
+
     function handleSound() {
       audio.play();
     }
     return (
-      <span className="Audio">
+      <div>
         <i
-          className="fa-regular fa-circle-play active"
+          className="fa-regular fa-circle-play Audio active"
           onClick={handleSound}
         ></i>
-      </span>
+        <span className="phonetic-text">{props.data.text}</span>
+      </div>
     );
   } else
     return (
-      <span className="Audio">
-        <i className="fa-regular fa-circle-play deactivated"></i>
-      </span>
+      <div>
+        <i className="fa-regular fa-circle-play Audio deactivated"></i>
+        <span className="phonetic-text">{props.data.text}</span>
+      </div>
     );
 }
