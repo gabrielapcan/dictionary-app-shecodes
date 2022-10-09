@@ -1,0 +1,19 @@
+.Synonyms {
+  text-align: center;
+  font-size: 13px;
+}
+
+.Synonyms p {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--highlight);
+  text-decoration: underline;
+  padding: 5px 10px;
+}
+.Synonyms .box {
+  border: 2px dotted var(--highlight);
+}
+.Synonyms .synonym {
+  font-style: italic;
+  padding: 4px 8px;
+}

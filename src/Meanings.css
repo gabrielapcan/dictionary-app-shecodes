@@ -6,25 +6,8 @@
   font-size: 14px;
 }
 
-.Meanings .example {
-  font-size: 13px;
-  font-style: italic;
-  text-align: right;
-  color: var(--secondary);
-  padding-top: 5px;
-}
 .Meanings .number {
   font-size: 11px;
   font-weight: 600;
   color: var(--highlight);
-}
-.Meanings .synonyms {
-  font-size: 13px;
-  font-style: italic;
-  padding: 4px 8px;
-  text-align: center;
-}
-.Meanings .synonyms-box {
-  background: var(--background);
-  border-radius: 3px;
 }

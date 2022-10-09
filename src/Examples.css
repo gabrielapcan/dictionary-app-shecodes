@@ -1,0 +1,7 @@
+.Examples {
+  font-size: 13px;
+  font-style: italic;
+  text-align: right;
+  color: var(--secondary);
+  padding-top: 5px;
+}
