@@ -2,19 +2,18 @@ import "./App.css";
 import logo from "./logo.png";
 import Dictionary from "./Dictionary";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
         <header>
-          <img src={logo} className="logo" alt="dictionary app logo"></img>
+          <h1>Dictionary App</h1>
         </header>
-        <main className="m-3">
+        <main className="main-section">
           <Dictionary />
         </main>
+        <footer>Coded by Gabriela Canelas</footer>
       </div>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,13 @@
+.Dictionary .form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.Dictionary .search-bar {
+  border-radius: 3px;
+}
+.Dictionary .search-button {
+  max-width: 1;
+  border-radius: 3px;
+  background: var(--secondary);
+  color: var(--background);
+}

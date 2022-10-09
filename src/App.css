@@ -1,5 +1,34 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--background);
+  font-family: var(main-font);
+}
+.App h1 {
+  text-align: center;
+  color: var(--primary);
+  font-weight: bold;
+  padding: 20px 0;
+  font-size: 54px;
+}
+.App footer {
+  text-align: center;
+  font-family: var(--monospace);
+  font-size: 11px;
+  margin: 20px;
+}
+
 .App .logo {
   max-width: 150px;
   display: block;
   margin: 15px auto;
+}
+
+.App .main-section {
+  padding: 20px;
+  border-radius: 4px;
+
+  background: white;
+  max-width: 650px;
+  margin: 0 auto;
 }

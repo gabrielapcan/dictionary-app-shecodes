@@ -1,4 +1,8 @@
 :root {
   --main-font: "Lato", sans-serif;
   --monospace: "Space Mono", monospace;
+  --primary: #303841;
+  --secondary: #3a4750;
+  --highlight: #d72323;
+  --background: #eeeeee;
 }
