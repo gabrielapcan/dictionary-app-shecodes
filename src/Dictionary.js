@@ -6,14 +6,28 @@ import Definitions from "./Definitions";
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.default);
   let [results, setResults] = useState(null);
+  let [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
     setResults(response.data[0]);
+  }
+  function handlePexelsResponse(response) {
+    setPhotos(response.data.photos);
   }
 
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+    const pexelsApiKey =
+      "563492ad6f917000010000019b1b1faa0feb4f509d1b8699ebb775e7";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+    axios
+      .get(pexelsApiUrl, {
+        headers: {
+          Authorization: `Bearer ${pexelsApiKey}`,
+        },
+      })
+      .then(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
@@ -31,7 +45,7 @@ export default function Dictionary(props) {
   let form = (
     <form onSubmit={handleSubmit} className="form">
       <div className="row">
-        <div className="col-10 form-components">
+        <div className="col-9 form-components">
           <input
             type="search"
             placeholder="Enter a keyword..."
@@ -40,7 +54,7 @@ export default function Dictionary(props) {
             onChange={handleWord}
           ></input>
         </div>
-        <div className="col-2 form-components">
+        <div className="col-3 form-components">
           <input
             type="submit"
             value="Search"
@@ -57,7 +71,7 @@ export default function Dictionary(props) {
       <div className="Dictionary">
         <section>{form}</section>
 
-        <Definitions data={results} />
+        <Definitions data={results} photos={photos} />
       </div>
     );
   } else {

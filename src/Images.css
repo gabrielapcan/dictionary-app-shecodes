@@ -1,0 +1,9 @@
+.Images {
+  padding: 15px 20px;
+}
+.Images .around-photo {
+  padding: 8px 0px;
+}
+.Images .display-images {
+  border-radius: 4px;
+}

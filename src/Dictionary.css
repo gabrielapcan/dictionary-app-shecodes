@@ -13,7 +13,7 @@
 .Dictionary .search-button {
   border-radius: 3px;
   background: var(--secondary);
-  color: var(--background);
+  color: white;
 }
 .Dictionary .search-button:hover {
   background: var(--highlight);

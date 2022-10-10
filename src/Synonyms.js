@@ -9,7 +9,7 @@ export default function Synonyms(props) {
         <div className="row box">
           {props.data.map(function (synonym, index) {
             return (
-              <div className="col-3 synonym" key={index}>
+              <div className="col-sm-3 synonym" key={index}>
                 {synonym}
               </div>
             );

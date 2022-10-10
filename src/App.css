@@ -1,16 +1,16 @@
 .App {
   margin: 0 auto;
-  font-family: var(main-font);
+  font-family: var(--roboto);
+  font-weight: 300;
 }
 section {
   background-color: var(--background);
-
   padding: 10px 30px;
   margin: 20px 0;
   border-radius: 5px;
 }
 
-.App img {
+.App .app-logo {
   width: 100%;
   margin: 20px 0 0 0;
 }
@@ -25,4 +25,18 @@ section {
   background: white;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.App .footer-link {
+  color: var(--highlight);
+}
+.App .footer-link i {
+  margin: 8px;
+  font-size: 14px;
+  color: var(--highlight);
+}
+
+.App .footer-link i:hover,
+.App .footer-link:hover {
+  color: var(--secondary);
 }
